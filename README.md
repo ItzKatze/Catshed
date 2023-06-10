@@ -6,4 +6,4 @@ Supports:
 
 - Slayer Drops
 - Farming Dicer Drops
-- Dungeon Chests comming soon
+- Dungeon Chests coming soon
