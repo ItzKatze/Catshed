@@ -1,0 +1,40 @@
+{
+    "enchantBooksT7": {
+        "ScavangerV": 0,
+        "SmiteVII": 1,
+        "SharpnessVII": 1,
+        "BaneOfArthropodsVII": 0,
+        "CubismVI": 0,
+        "ProtectionVII": 0,
+        "PowerVII": 0,
+        "LootingV": 0,
+        "CriticalVII": 0,
+        "ChanceV": 0,
+        "CleaveVI": 0,
+        "ExecuteVI": 0,
+        "VenomousVI": 0,
+        "EnderSlayerVII": 0,
+        "ProsecuteVI": 0,
+        "ProtectileProtectionVII": 0,
+        "BlastProtectionVII": 1,
+        "FireProtectionVII": 0,
+        "GiantKillerVII": 0,
+        "LuckVII": 0,
+        "TitanKillerVII": 0,
+        "ThunderboltVI": 1,
+        "FirstStrikeV": 0,
+        "LifeStealV": 0,
+        "SnipeIV": 0,
+        "GrowthVII": 0,
+        "TripleStrikeV": 0,
+        "SyphonV": 0
+    },
+    "enchantBooksT6": {
+        "SharpnessVI": 10,
+        "ProtectionVI": 6,
+        "GiantKillerVI": 8,
+        "GrowthVI": 8,
+        "SyphonIV": 10,
+        "PowerVI": 6
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Catshed",
+  "creator": "ItzKatze",
+  "description": "A ChatTriggers Addon which sends you discord notifications for various things.",
+  "version": "0.0.7",
+  "entry": "index.js",
+     "requires": [
+        "requestV2",
+        "Vigilance",
+        "PogData",
+        "Draggable"
+    ]
+}
