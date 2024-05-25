@@ -9,7 +9,7 @@
         "PowerVII": 0,
         "LootingV": 0,
         "CriticalVII": 0,
-        "ChanceV": 0,
+        "ChanceV": 1,
         "CleaveVI": 0,
         "ExecuteVI": 0,
         "VenomousVI": 0,
@@ -30,11 +30,11 @@
         "SyphonV": 0
     },
     "enchantBooksT6": {
-        "SharpnessVI": 10,
-        "ProtectionVI": 6,
-        "GiantKillerVI": 8,
-        "GrowthVI": 8,
-        "SyphonIV": 10,
+        "SharpnessVI": 11,
+        "ProtectionVI": 7,
+        "GiantKillerVI": 9,
+        "GrowthVI": 11,
+        "SyphonIV": 13,
         "PowerVI": 6
     }
 }
