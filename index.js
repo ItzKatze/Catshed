@@ -7,5 +7,6 @@ import "./features/lvl100Pet";
 import "./features/diamondTrophyFish";
 import "./features/santaGifts";
 import "./features/pests";
+import "./features/petDrops";
 
 register("command", () => Settings.openGUI()).setName("catshed");

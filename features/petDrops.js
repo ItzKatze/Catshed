@@ -2,18 +2,16 @@ import request from "../../requestV2";
 import Settings from "../settings";
 import webhookdata from "../webhook";
 import { pictures } from "../data/pictures";
+import { formateItem } from "../utils/utils";
 
 register("chat", (pet, magicFind, event) => {
 
-    let playerName = Player.getName();
-    let description = playerName + " just dropped **" + pet + "** while having " + magicFind + ":star: Magic Find!";
-    let title = "Pet Drop!";
+   if (Settings.petDrops) {
 
-
-   if (Settings.petDrops = true) {
-
-        let petFormatted = pet.replaceAll(/[\[\]◆\']/g, "").trim().toLowerCase().replaceAll(/[ \-]/g, "_");
-        let image = pictures.pets[petFormatted];
+        let image = pictures.pets[formateItem(pet)];
+        let playerName = Player.getName();
+        let description = playerName + " just dropped **" + pet + "** while having " + magicFind + "% Magic Find!";
+        let title = "Pet Drop!";
 
         if (image === undefined) return;
         if (image.includes("hypixel")) {
@@ -38,10 +36,10 @@ register("chat", (pet, magicFind, event) => {
                          }
                       ]
                 }
-             });
+            });
 
-             ChatLib.chat("&b[Catshed]&r &7Detected new Pet Drop! Sending Notification...");
+            ChatLib.chat("&b[Catshed]&r &7Detected Pet Drop! Sending Notification...");
 
         };
    }
-}).setCriteria(/PET DROP! ([a-zA-Z)]+) \(\+([0-9]+)% ✯ Magic Find\)/g);
+}).setCriteria(/PET DROP! ([a-zA-Z ]+) \(\+([0-9]+)% ✯ Magic Find\)/g);

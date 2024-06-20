@@ -46,3 +46,13 @@ export const data = new PogObject(
 	},
 	"data/catshed.json"
 );
+
+export function formateItem(item) {
+    formatedItem = item.replaceAll(/[\[\]◆✦\'\(\)]/g, "").replace('RARE REWARD! ', '').replace('Enchanted Book ', '').trim().replaceAll(/[- ]/g, "_").toLowerCase();
+    return formatedItem;
+}
+
+export function formateSendItem(item) {
+    formatedItem = item.replaceAll(/◆✦/g, "").trim();
+    return formatedItem;
+}

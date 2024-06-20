@@ -2,20 +2,16 @@ import request from "../../requestV2";
 import Settings from "../settings";
 import webhookdata from "../webhook";
 import { pictures } from "../data/pictures";
+import { formateItem } from "../utils/utils";
 
-register("chat", (pet, level, image, playerName, event) => {
+register("chat", (pet, level, event) => {
 
-    let playerName = Player.getName();
-    let description = playerName + " just leveled up their **" + pet + "** Pet to **Level " + level + "**!";
-    let title = "Maxed Pet!";
-    let image = "";
+   if (Settings.lvl100Pet && level == 100 || level == 200) {
 
-
-
-   if (Settings.lvl100Pet = true && level == 100 || level == 200) {
-
-      let petFormatted = pet.replaceAll(/[\[\]◆✦\']/g, "").trim().toLowerCase().replaceAll(/[ \-]/g, "_");
-      let image = pictures.pets[petFormatted];
+      let playerName = Player.getName();
+      let description = playerName + " just leveled up their **" + pet + "** Pet to **Level " + level + "**!";
+      let title = "Maxed Pet!";
+      let image = pictures.pets[formateItem(pet)];
  
       if (image === undefined) return;
       if (image.includes("hypixel")) {

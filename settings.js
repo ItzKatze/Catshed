@@ -1097,6 +1097,14 @@ class Settings {
     lvl100Pet = true;
 
     @SwitchProperty({
+        name: 'Pet Drops',
+        description: 'Enable to toggle Pet Drop Notifications!',
+        category: 'Miscellaneous',
+        subcategory: 'Miscellaneous Settings',
+    })
+    petDrops = true;
+
+    @SwitchProperty({
         name: 'Experiment Tracker',
         description: 'Enable to toggle the Experiment Tracker!',
         category: 'Miscellaneous',

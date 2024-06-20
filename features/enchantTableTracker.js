@@ -3,7 +3,6 @@ import Settings from "../settings";
 import { makeDisplayDraggable } from "../../Draggable";
 import { data } from "../utils/utils";
 import webhookdata from "../webhook";
-import settings from "../settings";
 
 
 const t7Books = [

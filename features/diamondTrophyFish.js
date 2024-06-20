@@ -2,18 +2,16 @@ import request from "../../requestV2";
 import Settings from "../settings";
 import webhookdata from "../webhook";
 import { pictures } from "../data/pictures";
+import { formateItem } from "../utils/utils";
 
 register("chat", (fish, event) => {
 
-    let playerName = Player.getName();
-    let description = playerName + " just fished up a **Diamond " + fish + "**!";
-    let title = "Diamond Trophy Fish!";
+   if (Settings.diamondTrophyFish) {
 
-
-   if (Settings.diamondTrophyFish = true) {
-
-        let fishFormatted = fish.replaceAll(/[\[\]◆\']/g, "").trim().toLowerCase().replaceAll(/[ \-]/g, "_");
-        let image = pictures.trophyFish[fishFormatted];
+        let image = pictures.trophyFish[formateItem(fish)];
+        let playerName = Player.getName();
+        let description = playerName + " just fished up their first **Diamond " + fish + "**!";
+        let title = "Diamond Trophy Fish!";
 
         if (image === undefined) return;
         if (image.includes("hypixel")) {

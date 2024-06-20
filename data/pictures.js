@@ -239,7 +239,7 @@ export const pictures = {
 
     visitorRNGs: {
         overgrown_grass: "https://wiki.hypixel.net/images/0/0c/SkyBlock_items_overgrown_grass.png",
-        green_bandana: "https://wiki.hypixel.net/images/2/24/SkyBlock_items_pet_item_green_bandana.png",
+        green_bandana: "https://wiki.hypixel.net/images/7/7b/SkyBlock_items_green_bandana.png",
         dedication_iv: "https://wiki.hypixel.net/images/4/4e/SkyBlock_items_enchanted_book.gif",
     },
 
