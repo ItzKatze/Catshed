@@ -18,7 +18,7 @@
         "ProtectileProtectionVII": 0,
         "BlastProtectionVII": 1,
         "FireProtectionVII": 0,
-        "GiantKillerVII": 0,
+        "GiantKillerVII": 1,
         "LuckVII": 0,
         "TitanKillerVII": 0,
         "ThunderboltVI": 1,
@@ -30,11 +30,11 @@
         "SyphonV": 0
     },
     "enchantBooksT6": {
-        "SharpnessVI": 11,
-        "ProtectionVI": 7,
-        "GiantKillerVI": 9,
-        "GrowthVI": 11,
-        "SyphonIV": 13,
+        "SharpnessVI": 12,
+        "ProtectionVI": 11,
+        "GiantKillerVI": 10,
+        "GrowthVI": 12,
+        "SyphonIV": 14,
         "PowerVI": 6
     }
 }
