@@ -48,7 +48,7 @@ export const data = new PogObject(
 );
 
 export function formateItem(item) {
-    formatedItem = item.replaceAll(/[\[\]◆✦\'\(\)]/g, "").replace('RARE REWARD! ', '').replace('Enchanted Book ', '').trim().replaceAll(/[- ]/g, "_").toLowerCase();
+    formatedItem = item.replace('RARE REWARD! ', '').replace('Enchanted Book (', '').replaceAll(/[\[\]◆✦\'\(\)]/g, "").trim().replaceAll(/[- ]/g, "_").toLowerCase();
     return formatedItem;
 }
 

@@ -508,14 +508,6 @@ class Settings {
     enchanted_book_bundle = true;
 
     @SwitchProperty({
-        name: 'Quantum Book Bundle',
-        description: '',
-        category: 'Slayer',
-        subcategory: 'Slayer Drop Notifications',
-    })
-    quantum_book_bundle = false;
-
-    @SwitchProperty({
         name: 'Soultwist Rune I',
         description: '',
         category: 'Slayer',
@@ -1217,7 +1209,6 @@ class Settings {
             this.addDependency("McGrubber's Burger", "Riftstalker Bloodfiend")
             this.addDependency("Unfanged Vampire Part", "Riftstalker Bloodfiend")
             this.addDependency("Enchanted Book Bundle", "Riftstalker Bloodfiend")
-            this.addDependency("Quantum Book Bundle", "Riftstalker Bloodfiend")
             this.addDependency("Soultwist Rune I", "Riftstalker Bloodfiend")
             this.addDependency("Bubba Blister", "Riftstalker Bloodfiend")
             this.addDependency("Fang-tastic Chocolate Chip", "Riftstalker Bloodfiend")

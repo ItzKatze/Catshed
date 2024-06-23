@@ -6,6 +6,8 @@ import { formateItem, formateSendItem } from "../utils/utils";
 
 register("chat", (rarity, drop, magicFind, event) => {
 
+     console.log(formateItem(drop));
+
    if (Settings[formateItem(drop)]) {
 
        let image = pictures.slayerDrops[formateItem(drop)];
@@ -57,4 +59,4 @@ register("chat", (rarity, drop, magicFind, event) => {
             ChatLib.chat("&b[Catshed]&r &7Detected Rare Drop! Sending Notification...");
        };
    }
-}).setCriteria(/([a-zA-Z ]+) DROP! \(([a-zA-Z ]+)\) \(\+([0-9]+)% ✯ Magic Find\)/g);
+}).setCriteria(/([a-zA-Z ]+) DROP! \(([a-zA-Z -]+)\) \(\+([0-9]+)% ✯ Magic Find\)/g);
