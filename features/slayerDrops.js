@@ -6,8 +6,6 @@ import { formateItem, formateSendItem } from "../utils/utils";
 
 register("chat", (rarity, drop, magicFind, event) => {
 
-     console.log(formateItem(drop));
-
    if (Settings[formateItem(drop)]) {
 
        let image = pictures.slayerDrops[formateItem(drop)];
